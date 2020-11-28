@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login form</title>
+    <link rel="stylesheet" href="responsive-tabs/responsive-tabs.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="login-tab">
+        <ul id="tabs">
+            <li><a href="#form"> Login </a></li>
+            <li><a href=".signup"> Sign Up </a></li>
+        </ul>
+
+        <div class="form" id="form">
+            <div class="form-container">
+                <h1>Login</h1>
+                <form action="#" method="">
+                    <input type="text" name="email" placeholder="Enter your email" required>
+                    <input type="password" name="passwd" placeholder="Enter your password" required>
+                    <button type="submit" name="login-submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="signup" id="signup">
+            <div class="form">
+            <div class="form-container">
+                <h1>Sign Up</h1>
+                <form action="#" method="">
+                    <input type="text" name="email" placeholder="Enter your email" required>
+                    <input type="password" name="passwd" placeholder="Enter your password" required>
+                    <input type="password" name="re-passwd" placeholder="Enter your password Again!" required>
+                    <button type="submit" name="login-submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="responsive-tabs/jquery.responsiveTabs.min.js"></script>
+    <script>
+        $('#login-tab').responsiveTabs({
+            startCollapsed: 'accordion'
+        });
+    </script>
+</body>
+
+</html>
